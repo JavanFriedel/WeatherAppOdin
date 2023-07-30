@@ -6,8 +6,18 @@
     <title>Basic Weather App</title>
   </head>
   <body>
-    <div id="app" class="text-3xl font-bold underline">
-      <span class="bg-red-700 mx-10"> is the start to an app.</span>
+    <div id="app" class="flex flex-row justify-center h-screen items-center">
+      <div class="m-auto flex flex-column">
+        <input
+          id="locationInput"
+          class="h-8 border-solid border-black border-2 mx-3"
+        />
+        <button id="getWeatherBtn" class="bg-slate-200 p-2 rounded-md">
+          Get Weather
+        </button>
+
+        <div id="WeatherDisplay"></div>
+      </div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
